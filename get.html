@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>None</title>
+    </head>
+    <body>
+        <img>
+    </body>
+    <script>
+        const params = new URLSearchParams(window.location.search)
+
+        document.querySelector('img').src = `./${params.get('link')}`
+    </script>
+</html>
